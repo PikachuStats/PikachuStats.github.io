@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pikachu's Stats</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            margin-left: 30px;
+            margin-right: 30px;
+            background-color: #000;
+            color: #fff;
+            margin-top: 30px;
+        }
+
+        header {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        .discord-button {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .discord-button:hover {
+            transform: scale(1.1);
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 1s ease;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .animation > div {
+            animation: fadeIn  0.5s ease;
+        }
+
+        .animation > div:nth-child(2) {
+            animation-delay:  0.1s;
+        }
+
+        .animation > div:nth-child(3) {
+            animation-delay:  0.2s;
+        }
+
+        .animation > div:nth-child(4) {
+            animation-delay:  0.3s;
+        }
+
+        .heading{
+            color:#fffb0a;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 50px;
+            font-weight: lighter;
+            font-variant: small-caps;
+        }
+
+        .page-heading {
+            color: rgb(255, 251, 10);
+            font-size: 50px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            padding: 10px;
+            font-variant: small-caps;
+            
+        }
+
+        .fade {
+            animation: fadeIn 2s ease;
+        }
+
+        .background {
+            background-color: #e78bdf;
+            object-fit: contain;
+            height: 100px;
+            width: 150px;
+            border: #e78bdf;
+            box-sizing: border-box;
+        }
+
+        .description-bot {
+            margin-left: 10px;
+        }
+
+        .bot-info {
+            text-align: center;
+            padding:  20px;
+            background-color: rgb(207, 183, 245);
+            box-shadow:  0  2px  4px rgba(0,0,0,0.1);
+        }
+
+        .bot-avatar img {
+            width:  150px;
+            height:  150px;
+            border-radius:  50%;
+            object-fit: cover;
+            border-color: #cc89f6;
+        }
+
+        .verified-badge {
+            bottom:  5px;
+            right:  5px;
+            background-color: #43b581;
+            color: #ffffff;
+            font-size:  12px;
+            padding:  2px  5px;
+            border-radius:  3px;
+        }
+
+        .bot-banner img {
+            width:  100%;
+            height:  200px;
+            object-fit: cover;
+        }
+
+        .bot-name h1 {
+            font-size:  24px;
+            color: #333333;
+        }
+
+        .bot-add-button .btn {
+            display: inline-block;
+            background-color: #7289da;
+            color: #ffffff;
+            padding:  10px  20px;
+            text-decoration: none;
+            border-radius:  5px;
+            margin-top:  10px;
+        }
+
+        .bot-details {
+            background-color: #1b1818;
+            border-color: #1b1818;
+        }
+
+        .bot-details h2 {
+            font-size:  20px;
+            color: #3f3c3c;
+        }
+
+        .bot-details ul {
+            list-style-type: none;
+            padding:  0;
+        }
+
+        .bot-details li {
+            margin-bottom:  5px;
+        }
+
+        .bot-links a {
+            margin-right:  10px;
+            text-decoration: none;
+            color: #7289da;
+        }
+        .badge {
+            margin-right: 45%;
+            margin-left: 45%;
+            top: 10px;
+            right:  5px;
+        }
+        .profile {
+            width: 69%;
+        }
+        
+        .policy-title {
+            margin-left: 30px;
+        }
+
+        .policy-content {
+            margin-left: 90px;
+        }
+
+        .tos-title {
+            margin-left: 30px;
+        }
+
+        .tos-content {
+            margin-left: 90px;
+        }
+        .footer {
+            color: #b8adad;
+            font-size: smaller;
+        }
+
+        .t-color {
+            background-color: #9a41ae;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADING -->
+    <div style="animation-delay: 5s; animation: fadeIn 5s ease-in;">
+        <table border=2 style="width: 100%;">
+            <tr>
+                <td class="t-color">
+                    <div align="right" class="background">
+                        <img src="https://media.discordapp.net/attachments/1115567816213545051/1210156528384868382/360_F_474448512_w2NP8jcwfKKX9rIballVuxSqQK4rNRbE.png?ex=65e98917&is=65d71417&hm=08183f513f28fd9d996a13d620dce21df75be37976e74272a3f5f2498c6d10af&=&format=webp&quality=lossless" height=200px width=1450px alt="Image not found">
+                    </div>
+                    <div align="center" class="page-heading">
+                        <font>Pikachu Stats</font>
+                    </div>
+                    <div align="right" style="margin-right: 30px;">
+                        
+                        <br>
+                        <br>
+    
+                        <a href="https://discord.gg/B3DQgwUgyT" class="discord-button">Support Server</a>
+                        <a href="https://discord.com/api/oauth2/authorize?client_id=1112768481956479108&permissions=9882656177393&scope=bot" class="discord-button">Invite Bot</a>
+                        <br>
+                        <br>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+        
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- BOT'S DESCRIPTION -->
+    <div class="description-bot" style="animation-delay: 10s; animation: fadeIn 5s ease-in;">
+        <table border=2>
+            <tr>
+                <td>
+                    <div class="container">
+                        <h1 class="heading"><u>Pikachu Stats</u></h1>
+                        <br>
+                        <p>Pikachu's Stats, the ultimate stats companion for PikaNetwork server, trusted by 200+ communities. Get real-time stats, including player stats, guild logs, leaderboard etc, all beautifully presented in images and embeds. It's the go-to choice for Pika Network enthusiasts, regularly updated for top-notch performance. Elevate your server management effortlessly with our bot.</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <!-- BOT'S PROFILE -->
+    <div align="center" style="animation-delay: 15s; animation: fadeIn 5s ease-in;">
+        <table border=2 class="profile">
+            <tr>
+                <td colspan=2>
+                    <div align="center">
+                        <div class="bot-info">
+                            <div class="bot-avatar">
+                                <img src="https://cdn.discordapp.com/avatars/1112768481956479108/e702ba159630b1f84e0877e4955f7be1.png?size=80" alt="Bot Avatar" border=2>
+                            </div>
+                            
+                            <div class="bot-name">
+                                <h1>Pikachu's Stats</h1>
+                                <div class="badge" align="center">
+                                    <p class="verified-badge">✔ Verified Bot</p>
+                                </div>
+                            </div>
+                            <div class="bot-add-button">
+                                <a href="https://discord.com/api/oauth2/authorize?client_id=1112768481956479108&permissions=9882656177393&scope=bot" class="btn">Add to Server</a>
+                            </div>
+                        </div>
+                        <div class="bot-details">
+                            <h2>Stats</h2>
+                            <p>Popular Slash Commands:</p>
+                            <ul>
+                                <li>/bedwars</li>
+                                <li>/skywars</li>
+                                <li>/bw</li>
+                                <li>/sw</li>
+                                <li>/guild-logs</li>
+                                <li>/guild-stats</li>
+                                <li>/guild-info</li>
+                                <li>/friends</li>
+                            </ul>
+                            <p>Supporting Languages:</p>
+                            <ul>
+                                <li>English</li>
+                            </ul>
+                            <div class="bot-links">
+                                <a href="#private-policy">Privacy Policy</a>
+                                <a href="#terms-of-service">Terms of Service</a>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+
+    <!-- PRIVATE POLICY-->
+    <a name="private-policy"></a>
+    <div class="policy-title" style="animation-delay: 20s; animation: fadeIn 5s ease-in;">
+        <table border=2>
+            <tr>
+                <td>
+                    <div class="container">
+                        <h1 class="heading"><u>Private Policy</u></h1>
+                        <br>
+                        <p>This Privacy Policy outlines how we collect, use, and safeguard the personal information of users ("you" or "users") who interact with Pikachu's Stats.</p>    
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- CONTENT OF PRIVATE POLICY-->
+    <div class="policy-content" style="animation-delay: 25s; animation: fadeIn 5s ease-in;">
+        <table border=2>
+            <tr>
+                <td>
+                    <div>
+                        <ol type="1" start=1>
+                            <li style="animation: fadeIn 10s ease-out;">
+                                <h3>Information We Collect</h3>
+                                <ul type="disc">
+                                    <li>User-Provided Information: When using the Bot, you may voluntarily provide certain information, including but not limited to text, images, and other content submitted through the Bot.</li>
+                                    <li>Automatically Collected Information: We may collect certain information automatically as you interact with the Bot. This information may include server and user IDs, message content, and usage patterns.</li>
+                                </ul>
+                            </li>
+                            <li style="animation: fadeIn 10s ease-out;">
+                                <h3>Use of Information</h3>
+                                <ul type="disc">
+                                    <li>We may use the information collected to provide, maintain, and improve the Bot's functionality and features.</li>
+                                    <li>Your user-generated content may be used to operate and enhance the Bot's capabilities.</li>
+                                    <li>We may use aggregated, anonymized data for statistical and analytical purposes to understand usage trends and improve the Bot.</li>
+                                </ul>
+                            </li>
+                            <li style="animation: fadeIn 10s ease-out;">
+                                <h3>Sharing of Information</h3>
+                                <ul type="disc">
+                                    <li>We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this Policy.</li>
+                                    <li>We may share user-generated content within the context of the Bot's functionality and features.</li>
+                                    <li>We may disclose information in response to legal requests or as required by applicable laws.</li>
+                                </ul>
+                            </li>
+                            <li style="animation: fadeIn 10s ease-out;">
+                                <h3>Data Retention</h3>
+                                <ul type="disc">
+                                    <li>We will retain your information for as long as necessary to fulfill the purposes outlined in this Policy, unless a longer retention period is required or permitted by law.</li>
+                                </ul>
+                            </li>
+                            <li style="animation: fadeIn 10s ease-out;">
+                                <h3>Security</h3>
+                                <ul type="disc">
+                                    <li>We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure.</li>
+                                    <li>Please be aware that no data transmission over the internet or electronic storage method is 100% secure, and we cannot guarantee absolute security.</li>
+                                </ul>
+                            </li>
+                            <li style="animation: fadeIn 10s ease-out;">
+                                <h3>Your Choices</h3>
+                                <ul type="disc">
+                                    <li>You may have the ability to modify or delete certain personal information by adjusting your settings within Discord.</li>
+                                    <li>You can choose not to provide certain information, but this may limit your ability to use certain features of the Bot.</li>
+                                </ul>
+                            </li>
+                            <li style="animation: fadeIn 10s ease-out;">
+                                <h3>Children's Privacy</h3>
+                                <ul type="disc">
+                                    <li>The Bot is not intended for individuals under the age of 13. We do not knowingly collect personal information from individuals under this age.</li>
+                                </ul>
+                            </li>
+                            <li style="animation: fadeIn 10s ease-out;">
+                                <h3>Changes to this Policy</h3>
+                                <ul type="disc">
+                                    <li>We reserve the right to modify this Policy at any time. Changes will be effective immediately upon posting the updated Policy.</li>
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- TERMS OF SERVICE -->
+    <a name="terms-of-service"></a>
+    <div class="tos-title" style="animation-delay: 30s; animation: fadeIn 5s ease-in;">
+        <table border=2>
+            <tr>
+                <td>
+                    <div class="container">
+                        <h1 class="heading"><u>Terms of service</u></h1>
+                        <br>
+                        <p>These Terms of Service govern your use of Pikachu's Stats. By using the Bot, you agree to these Terms in their entirety. If you do not agree with these Terms, please refrain from using the Bot.</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- CONTENT OF TOS -->
+    <div class="tos-content" style="animation-delay: 35s; animation: fadeIn 5s ease-in;">
+        <table border=2>
+            <tr>
+                <td>
+                    <div>
+                        <ol type="1" start=1>
+                            <li style="animation: fadeIn 10s ease-out;">
+                                <h3>Use of the Bot</h3>
+                                <ul type="disc">
+                                    <li>The Bot provides certain functionalities and features within Discord servers. You agree to use the Bot only for its intended purpose and in accordance with Discord's Terms of Service and Community Guidelines.</li>
+                                    <li>You acknowledge that the Bot may be subject to updates or modifications at our discretion. Continued use of the Bot after any changes to the Bot's features or these Terms constitutes your acceptance of such changes.</li>
+                                </ul>
+                            </li>
+                            <li style="animation: fadeIn 10s ease-out;">
+                                <h3>User Content</h3>
+                                <ul type="disc">
+                                    <li>The Bot may allow users to submit, upload, or share content, including text, images, and other media. You retain all rights to the content you submit.</li>
+                                    <li>You grant us a non-exclusive, royalty-free, worldwide license to use, modify, reproduce, and distribute your user-generated content solely for the purpose of operating and improving the Bot.</li>
+                                    <li>You are solely responsible for the content you submit through the Bot. You agree not to submit content that is unlawful, defamatory, obscene, or violates any third-party rights.</li>
+                                </ul>
+                            </li>
+                            <li style="animation: fadeIn 10s ease-out;">
+                                <h3>Privacy</h3>
+                                <ul type="disc">
+                                    <li>We may collect certain information from users in connection with their use of the Bot. Our collection and use of personal information are governed by our <a href="#private-policy">Privacy Policy</a>.</li>
+                                    <li>By using the Bot, you consent to the collection, use, and sharing of your information as described in our Privacy Policy.</li>
+                                </ul>
+                            </li>
+                            <li style="animation: fadeIn 10s ease-out;">
+                                <h3>Limitation of Liability</h3>
+                                <ul type="disc">
+                                    <li>The Bot is provided "as is" and "as available" without any warranties or guarantees of any kind, whether express or implied.</li>
+                                    <li>We shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with the use or inability to use the Bot.</li>
+                                </ul>
+                            </li>
+                            <li style="animation: fadeIn 10s ease-out;">
+                                <h3>Termination</h3>
+                                <ul type="disc">
+                                    <li>We reserve the right to suspend or terminate your access to the Bot at any time for violations of these Terms or for any other reason.</li>
+                                    <li>Upon termination, all provisions of these Terms which by their nature should survive termination, including ownership provisions, warranty disclaimers, indemnity, and limitations of liability, will continue to apply.</li>
+                                </ul>
+                            </li>
+                            <li style="animation: fadeIn 10s ease-out;">
+                                <h3>Changes to Terms</h3>
+                                <ul type="disc">
+                                    <li>We reserve the right to modify or replace these Terms at any time. Changes will be effective immediately upon posting to our website or notifying users through the Bot.</li>   
+                                </ul>
+                            </li>
+                        </ol>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <div class="footer" style="animation-delay: 40s; animation: fadeIn 5s ease-in;">
+        <p>Contact us: <a href="https://discord.gg/B3DQgwUgyT">Support Server</a></p>
+    </div>
+</body>
+</html>
