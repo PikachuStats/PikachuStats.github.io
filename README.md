@@ -2,3 +2,6 @@
 
 ik u all love stalking our bot :) (u love stalking us cuz ours is better than ur u small pps please do the world a favor and hang urself and just d!e)
 soooo you this this special message is for u all 
+
+with love <3
+ur friend pikachu stats team
